@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/book/imx6ull'
+arm-buildroot-linux-gnueabihf-gcc -o test main.o a.o b.o
+make: Leaving directory '/home/book/imx6ull'
+ 

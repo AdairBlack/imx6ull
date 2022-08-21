@@ -1,0 +1,248 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Aug 21 10:35:32 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# environment
+VSCODE_AGENT_FOLDER = /home/book/.vscode-server
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 4.1
+# makefile
+CURDIR := /home/book/imx6ull
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+_ = /home/book/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/node
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1001/bus
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /home/book
+# environment
+SSH_CONNECTION = 192.168.0.11 57756 192.168.0.8 22
+# environment
+PATH = /home/book/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin
+# environment
+XDG_RUNTIME_DIR = /run/user/1001
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# automatic
+%F = $(notdir $%)
+# environment
+PWD = /home/book/imx6ull
+# environment
+VSCODE_IPC_HOOK_CLI = /run/user/1001/vscode-ipc-c48f8856-4942-466f-b1c8-21490a64e1c2.sock
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/book
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+LOGNAME = book
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 3
+# environment
+XDG_SESSION_ID = 5
+# environment
+USER = book
+# makefile
+.DEFAULT_GOAL := test
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /home/book/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+ARCH = arm
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_CLIENT = 192.168.0.11 57756 22
+# environment
+MAIL = /var/mail/book
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+BROWSER = /home/book/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/helpers/browser.sh
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# environment
+CROSS_COMPILE = arm-buildroot-linux-gnueabihf-
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+LANG = C
+# variable set hash-table stats:
+# Load=66/1024=6%, Rehash=0, Collisions=8/91=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2052, inode 2361780): 11 files, no impossibilities.
+
+# 11 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+b.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+b.o: b.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 11):
+	arm-buildroot-linux-gnueabihf-gcc -c -o b.o b.c
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+a.o: a.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 8):
+	arm-buildroot-linux-gnueabihf-gcc -c -o a.o a.c
+
+# Not a target:
+main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-21 10:35:18.592789934
+#  File has been updated.
+#  Successfully updated.
+
+test: main.o a.o b.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 2):
+	arm-buildroot-linux-gnueabihf-gcc -o test main.o a.o b.o
+
+# Not a target:
+a.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+main.o: main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 5):
+	arm-buildroot-linux-gnueabihf-gcc -c -o main.o main.c
+
+# files hash-table stats:
+# Load=11/1024=1%, Rehash=0, Collisions=5/30=17%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 17 / storage = 119 B / avg = 7 B
+# current buf: size = 8162 B / used = 119 B / count = 17 / avg = 7 B
+
+# strcache performance: lookups = 34 / hit rate = 50%
+# hash-table stats:
+# Load=17/8192=0%, Rehash=0, Collisions=7/34=21%
+# Finished Make data base on Sun Aug 21 10:35:32 2022
+
+ 
