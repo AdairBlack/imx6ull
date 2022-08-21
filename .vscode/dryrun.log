@@ -1,5 +1,7 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory '/home/book/imx6ull'
-arm-buildroot-linux-gnueabihf-gcc -o test main.o a.o b.o
+make -C ./ -f /home/book/imx6ull/Makefile.build
 make: Leaving directory '/home/book/imx6ull'
  
+make: *** No rule to make target 'built-in.o', needed by 'test'.
+

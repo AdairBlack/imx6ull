@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2014 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Aug 21 10:35:32 2022
+# Make data base, printed on Sun Aug 21 14:08:32 2022
 
 # Variables
 
@@ -20,8 +18,12 @@ make: *** No rule to make target 'all'.  Stop.
 .SHELLFLAGS := -c
 # environment
 VSCODE_AGENT_FOLDER = /home/book/.vscode-server
+# makefile (from 'Makefile', line 27)
+TARGET := test
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 31)
+obj-y = main.o first/
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
@@ -32,10 +34,14 @@ MAKE_VERSION := 4.1
 CURDIR := /home/book/imx6ull
 # makefile
 SHELL = /bin/sh
+# makefile (from 'Makefile', line 8)
+NM = $(CROSS_COMPILE)nm
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
 _ = /home/book/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/node
+# makefile (from 'Makefile', line 18)
+CFLAGS := -Wall -O2 -g -I /home/book/imx6ull/include
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # 'override' directive
@@ -44,18 +50,28 @@ GNUMAKEFLAGS :=
 XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1001/bus
+# makefile (from 'Makefile', line 5)
+CC = $(CROSS_COMPILE)gcc
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
+# makefile (from 'Makefile', line 6)
+CPP = $(CC) -E
 # environment
 VSCODE_CWD = /home/book
 # environment
 SSH_CONNECTION = 192.168.0.11 57756 192.168.0.8 22
 # environment
 PATH = /home/book/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin
+# makefile (from 'Makefile', line 4)
+LD = $(CROSS_COMPILE)ld
 # environment
 XDG_RUNTIME_DIR = /run/user/1001
+# makefile (from 'Makefile', line 7)
+AR = $(CROSS_COMPILE)ar
 # environment
 ELECTRON_RUN_AS_NODE = 1
+# makefile (from 'Makefile', line 20)
+LDFLAGS := 
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -92,12 +108,14 @@ MAKE = $(MAKE_COMMAND)
 MAKECMDGOALS := all
 # environment
 SHLVL = 3
+# makefile (from 'Makefile', line 3)
+AS = $(CROSS_COMPILE)as
 # environment
 XDG_SESSION_ID = 5
 # environment
 USER = book
 # makefile
-.DEFAULT_GOAL := test
+.DEFAULT_GOAL := all
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
@@ -106,6 +124,8 @@ MAKE_COMMAND := make
 OLDPWD = /home/book/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662
 # default
 .VARIABLES := 
+# makefile (from 'Makefile', line 24)
+TOPDIR := /home/book/imx6ull
 # automatic
 *F = $(notdir $*)
 # environment
@@ -120,12 +140,16 @@ SSH_CLIENT = 192.168.0.11 57756 22
 MAIL = /var/mail/book
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 12)
+OBJDUMP = $(CROSS_COMPILE)objdump
 # environment
 BROWSER = /home/book/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/helpers/browser.sh
+# makefile (from 'Makefile', line 10)
+STRIP = $(CROSS_COMPILE)strip
 # environment
 VSCODE_HANDLES_SIGPIPE = true
-# environment
-CROSS_COMPILE = arm-buildroot-linux-gnueabihf-
+# makefile (from 'Makefile', line 1)
+CROSS_COMPILE = 
 # default
 MAKEFILES := 
 # automatic
@@ -134,6 +158,8 @@ MAKEFILES :=
 LC_ALL = C
 # automatic
 ^F = $(notdir $^)
+# makefile (from 'Makefile', line 11)
+OBJCOPY = $(CROSS_COMPILE)objcopy
 # default
 SUFFIXES := 
 # default
@@ -145,7 +171,7 @@ MAKE_HOST := x86_64-pc-linux-gnu
 # environment
 LANG = C
 # variable set hash-table stats:
-# Load=66/1024=6%, Rehash=0, Collisions=8/91=9%
+# Load=80/1024=8%, Rehash=0, Collisions=12/135=9%
 
 # Pattern-specific Variable Values
 
@@ -153,9 +179,9 @@ LANG = C
 
 # Directories
 
-# . (device 2052, inode 2361780): 11 files, no impossibilities.
+# . (device 2052, inode 2361780): 8 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 8 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -163,35 +189,29 @@ LANG = C
 
 # Files
 
-# Not a target:
-b.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-b.o: b.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 11):
-	arm-buildroot-linux-gnueabihf-gcc -c -o b.o b.c
-
-# Not a target:
-all:
+all: start_recursive_build test
 #  Command line target.
-#  Implicit rule search has been done.
+#  Implicit rule search has not been done.
 #  File does not exist.
-#  File has not been updated.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+#  recipe to execute (from 'Makefile', line 35):
+	@echo $(TARGET) has been built!
 
-a.o: a.c
+distclean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 8):
-	arm-buildroot-linux-gnueabihf-gcc -c -o a.o a.c
+#  recipe to execute (from 'Makefile', line 48):
+	rm -f $(shell find -name "*.o")
+	rm -f $(shell find -name "*.d")
+	rm -f $(TARGET)
+	
 
 # Not a target:
-main.c:
+.SUFFIXES:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -199,22 +219,16 @@ main.c:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-21 10:35:18.592789934
+#  Last modified 2022-08-21 14:04:48.609997309
 #  File has been updated.
 #  Successfully updated.
 
-test: main.o a.o b.o
+test: built-in.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 2):
-	arm-buildroot-linux-gnueabihf-gcc -o test main.o a.o b.o
-
-# Not a target:
-a.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 41):
+	$(CC) -o $(TARGET) built-in.o $(LDFLAGS)
 
 # Not a target:
 .DEFAULT:
@@ -222,27 +236,62 @@ a.c:
 #  Modification time never checked.
 #  File has not been updated.
 
-main.o: main.c
+clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 5):
-	arm-buildroot-linux-gnueabihf-gcc -c -o main.o main.c
+#  recipe to execute (from 'Makefile', line 44):
+	rm -f $(shell find -name "*.o")
+	rm -f $(TARGET)
+
+start_recursive_build:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := start_recursive_build
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/12=17%
+#  recipe to execute (from 'Makefile', line 38):
+	make -C ./ -f $(TOPDIR)/Makefile.build
+
+# Not a target:
+built-in.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # files hash-table stats:
-# Load=11/1024=1%, Rehash=0, Collisions=5/30=17%
+# Load=9/1024=1%, Rehash=0, Collisions=0/26=0%
 # VPATH Search Paths
+ 
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 119 B / avg = 7 B
-# current buf: size = 8162 B / used = 119 B / count = 17 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 166 B / avg = 9 B
+# current buf: size = 8162 B / used = 166 B / count = 18 / avg = 9 B
 
-# strcache performance: lookups = 34 / hit rate = 50%
+# strcache performance: lookups = 31 / hit rate = 41%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=7/34=21%
-# Finished Make data base on Sun Aug 21 10:35:32 2022
+# Load=18/8192=0%, Rehash=0, Collisions=1/31=3%
+# Finished Make data base on Sun Aug 21 14:08:32 2022
 
  
