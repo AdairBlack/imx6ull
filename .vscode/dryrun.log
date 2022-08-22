@@ -1,7 +1,0 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory '/home/book/imx6ull'
-make -C ./ -f /home/book/imx6ull/Makefile.build
-make: Leaving directory '/home/book/imx6ull'
- 
-make: *** No rule to make target 'built-in.o', needed by 'test'.
-
