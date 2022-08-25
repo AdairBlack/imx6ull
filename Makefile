@@ -28,7 +28,7 @@ TARGET := test
 
 
 obj-y += main.o
-#obj-y += file_io/
+obj-y += file_io/
 
 
 all : start_recursive_build $(TARGET)
